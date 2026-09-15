@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Наталья Новоселова — перманентный макияж, Красноярск</title>
+<meta name="description" content="Эстетический перманентный макияж бровей, губ и век в технике теневой растушёвки. Наталья Новоселова, стаж более 8 лет, студия PERMANENT lash brow, Капитанская 12, ЖК Южный берег, Красноярск.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Jost:wght@200;300;400&family=Bad+Script&family=Onest:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23ADA9A5'/><text x='32' y='44' font-size='28' font-family='Georgia,serif' letter-spacing='1' text-anchor='middle' fill='%23111'>NN</text></svg>">
+<style>
+:root{
+  /* палитра снята с её обложки и работ: студийный серый, чёрный, нюд, кирпичный */
+  --paper:#E7E4E0;
+  --paper-2:#F2F0ED;
+  --smoke:#ADA9A5;
+  --smoke-d:#8F8B87;
+  --ink:#111111;
+  --ink-2:#1A1A18;
+  --nude:#D8A8A8;
+  --brick:#9A3D3D;
+  --dim:#6F6B67;
+  --dim-l:#9B958F;
+  --lineL:rgba(17,17,17,.15);
+  --lineD:rgba(231,228,224,.18);
+  --disp:'Forum',Georgia,'Times New Roman',serif;
+  --thin:'Jost',-apple-system,'Segoe UI',Arial,sans-serif;
+  --hand:'Bad Script','Segoe Script',cursive;
+  --sans:'Onest',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  --rail:76px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--paper)}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;
+     font-size:clamp(15.5px,.34vw + 14.4px,17.5px);line-height:1.62;-webkit-font-smoothing:antialiased;
+     overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--ink);color:var(--paper)}
+
+/* разрядка капсом — её фирменный приём */
+.sp{font-family:var(--thin);font-weight:200;font-size:10.5px;letter-spacing:.34em;
+    text-transform:uppercase;line-height:1.7}
+.sp-s{font-family:var(--thin);font-weight:300;font-size:10.5px;letter-spacing:.18em;
+      text-transform:uppercase;line-height:1.6}
+.hand{font-family:var(--hand);font-weight:400}
+
+/* ── рейка ─────────────────────────────────────────── */
+.rail{position:fixed;left:0;top:0;bottom:0;width:var(--rail);z-index:60;
+      border-right:1px solid var(--lineL);display:flex;flex-direction:column;
+      align-items:center;justify-content:space-between;padding:20px 0;
+      background:var(--paper);pointer-events:none}
+.rail span{pointer-events:auto}
+.rail .r-mark{font-family:var(--disp);font-size:20px;letter-spacing:.12em}
+.rail .r-vert{writing-mode:vertical-rl;font-family:var(--thin);font-weight:200;font-size:9.5px;
+              letter-spacing:.42em;text-transform:uppercase;color:var(--dim)}
+.rail .r-num{font-family:var(--thin);font-weight:300;font-size:11px;letter-spacing:.1em;color:var(--brick)}
+@media(max-width:1000px){.rail{display:none}:root{--rail:0px}}
+
+/* ── шапка ─────────────────────────────────────────── */
+.top{position:fixed;left:var(--rail);right:0;top:0;z-index:55;display:flex;align-items:center;
+     gap:24px;padding:0 clamp(16px,2.6vw,40px);height:62px;
+     border-bottom:1px solid transparent;transition:background .3s,border-color .3s}
+.top.solid{background:rgba(231,228,224,.93);backdrop-filter:blur(10px);border-bottom-color:var(--lineL)}
+.nav{display:flex;gap:24px}
+.nav a{font-family:var(--thin);font-weight:300;font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+       color:var(--dim);padding-bottom:3px;border-bottom:1px solid transparent;transition:.2s}
+.nav a:hover{color:var(--ink);border-bottom-color:var(--brick)}
+.top .r{margin-left:auto;display:flex;align-items:center;gap:16px}
+.top .tel{font-family:var(--thin);font-weight:300;font-size:12px;letter-spacing:.09em;white-space:nowrap}
+@media(max-width:1200px){.nav a:nth-child(n+6){display:none}}
+@media(max-width:880px){.nav{display:none}}
+
+.lnk{display:inline-block;font-family:var(--thin);font-weight:300;font-size:10px;letter-spacing:.2em;
+     text-transform:uppercase;border:1px solid var(--ink);padding:12px 20px;transition:.18s;white-space:nowrap}
+.lnk:hover{background:var(--ink);color:var(--paper)}
+.lnk-f{background:var(--ink);color:var(--paper)}
+.lnk-f:hover{background:transparent;color:var(--ink)}
+.lnk-g{border-color:var(--lineL);color:var(--dim)}
+.lnk-g:hover{background:transparent;border-color:var(--ink);color:var(--ink)}
+
+/* ── общее ─────────────────────────────────────────── */
+.page{margin-left:var(--rail)}
+.pad{padding:0 clamp(16px,2.6vw,40px)}
+.sect{padding-block:clamp(56px,6.4vw,112px);border-top:1px solid var(--lineL)}
+.dark{background:var(--ink);color:var(--paper);border-top-color:var(--ink)}
+.dark .sp,.dark .sp-s{color:var(--dim-l)}
+.dark .lnk{border-color:var(--paper)}
+.dark .lnk:hover{background:var(--paper);color:var(--ink)}
+.dark .lnk-f{background:var(--paper);color:var(--ink)}
+.dark .lnk-f:hover{background:transparent;color:var(--paper)}
+.dark .lnk-g{border-color:var(--lineD);color:var(--dim-l)}
+.dark .lnk-g:hover{border-color:var(--paper);color:var(--paper)}
+.tone{background:var(--paper-2)}
+
+.head{margin-bottom:clamp(30px,3.6vw,60px)}
+.head .idx{display:block;color:var(--brick);margin-bottom:16px}
+.dark .head .idx{color:var(--nude)}
+.head h2{font-family:var(--disp);font-weight:400;font-size:clamp(28px,4.4vw,62px);line-height:1.04;
+         letter-spacing:.1em;text-transform:uppercase}
+.head h2 i{font-style:normal;color:var(--brick)}
+.dark .head h2 i{color:var(--nude)}
+.head .sub{max-width:58ch;color:var(--dim);margin-top:16px}
+.dark .head .sub{color:var(--dim-l)}
+
+.rv{opacity:0;transform:translateY(16px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* ── первый экран: разворот её обложки ─────────────── */
+.cover{position:relative;min-height:100svh;display:flex;flex-direction:column;
+       background:radial-gradient(120% 90% at 32% 26%, #C6C2BE 0%, #ADA9A5 46%, #8E8A86 100%);
+       color:var(--ink);overflow:hidden;padding-top:86px}
+.cover-grid{flex:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.86fr);
+            gap:clamp(20px,3vw,56px);align-items:center;padding-bottom:clamp(20px,2.6vw,40px)}
+.mark{max-width:100%}
+.mark .wm{font-family:var(--disp);font-weight:400;text-transform:uppercase;line-height:1.02;
+          letter-spacing:.14em;font-size:clamp(30px,6vw,82px)}
+.mark .wm span{display:table;white-space:nowrap}
+.mark .kicker{margin-top:clamp(14px,1.6vw,22px);color:#3A3734;
+              font-family:var(--thin);font-weight:200;font-size:clamp(9.5px,.8vw,12px);
+              letter-spacing:.62em;text-transform:uppercase}
+.mark .rule{height:1px;background:rgba(17,17,17,.3);margin:clamp(20px,2.4vw,34px) 0}
+.mark .where{display:flex;gap:clamp(14px,2vw,34px);flex-wrap:wrap;color:#3A3734;margin-bottom:18px}
+.mark .lead{max-width:40ch;color:#332F2C;font-size:clamp(15px,.5vw + 13px,17px)}
+.mark .sign{display:inline-block;transform:rotate(-7deg);transform-origin:left center;
+            font-family:var(--hand);font-size:clamp(20px,2vw,30px);color:#fff;
+            margin-top:clamp(18px,2vw,28px);text-shadow:0 1px 14px rgba(0,0,0,.18)}
+.mark .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:clamp(22px,2.6vw,36px)}
+.mark .cta .lnk{border-color:var(--ink)}
+.portrait{position:relative;align-self:stretch;display:flex;align-items:flex-end}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:top center;
+              background:rgba(17,17,17,.1);filter:contrast(1.02)}
+.cover-note{position:absolute;right:clamp(16px,2.6vw,40px);top:96px;text-align:right;color:#3A3734}
+.slate{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(17,17,17,.24)}
+.slate>div{padding:18px clamp(10px,1.4vw,22px) 22px;border-left:1px solid rgba(17,17,17,.24)}
+.slate>div:first-child{border-left:0;padding-left:0}
+.slate b{display:block;font-family:var(--disp);font-weight:400;font-size:clamp(22px,2.4vw,36px);
+         line-height:1;letter-spacing:.06em}
+.slate span{display:block;margin-top:9px;color:#423E3A}
+@media(max-width:900px){
+  .cover-grid{grid-template-columns:1fr;align-items:start;gap:26px}
+  .portrait{min-height:44vh}
+  .cover-note{display:none}
+  .slate{grid-template-columns:1fr 1fr}
+  .slate>div{border-top:1px solid rgba(17,17,17,.24);padding-left:0}
+  .slate>div:nth-child(2n){padding-left:clamp(10px,1.4vw,22px)}
+  .slate>div:nth-child(-n+2){border-top:0}
+  .slate>div:nth-child(odd){border-left:0}
+}
+
+/* ── бегущая строка ────────────────────────────────── */
+.tick{background:var(--ink);color:var(--paper);overflow:hidden;white-space:nowrap;padding:14px 0}
+.tick-t{display:inline-flex;animation:run 56s linear infinite}
+.tick-t span{font-family:var(--thin);font-weight:200;font-size:10px;letter-spacing:.34em;
+             text-transform:uppercase;padding:0 26px}
+.tick-t span:after{content:'\00B7';margin-left:26px;color:var(--nude)}
+@keyframes run{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.tick-t{animation:none}}
+
+/* ── прайс ─────────────────────────────────────────── */
+.ptabs{display:flex;flex-wrap:wrap;border-top:1px solid var(--lineL);border-bottom:1px solid var(--lineL)}
+.ptab{flex:1 1 auto;min-width:148px;background:none;border:0;border-left:1px solid var(--lineL);
+      padding:15px 14px;cursor:pointer;font-family:var(--thin);font-weight:300;font-size:10px;
+      letter-spacing:.18em;text-transform:uppercase;color:var(--dim);text-align:left;transition:.18s}
+.ptab:first-child{border-left:0}
+.ptab:hover{color:var(--ink)}
+.ptab.on{background:var(--ink);color:var(--paper)}
+.plist{display:none}
+.plist.on{display:block}
+.pr{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;gap:16px;
+    padding:18px 0;border-bottom:1px solid var(--lineL);transition:padding .2s}
+.pr:hover{padding-left:12px}
+.pr .n{font-size:17px;line-height:1.35}
+.pr .n em{display:block;font-style:normal;color:var(--dim);font-size:13.5px;margin-top:3px}
+.pr .v{font-family:var(--disp);font-weight:400;font-size:clamp(21px,1.9vw,30px);letter-spacing:.05em;white-space:nowrap}
+.pr:hover .v{color:var(--brick)}
+.pmore{display:none}
+@media(max-width:700px){
+  .plist.on .pr:nth-of-type(n+6){display:none}
+  .plist.on.exp .pr:nth-of-type(n+6){display:grid}
+  .pmore{display:block;width:100%;margin-top:18px;padding:14px;background:none;border:1px solid var(--lineL);
+         font-family:var(--thin);font-weight:300;font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+         color:var(--ink);cursor:pointer}
+}
+.fine{margin-top:22px;color:var(--dim);font-size:13px;max-width:82ch}
+.dark .fine{color:var(--dim-l)}
+
+/* ── подход ────────────────────────────────────────── */
+.tenets{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--lineD)}
+@media(max-width:980px){.tenets{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.tenets{grid-template-columns:1fr}}
+.tenet{border-left:1px solid var(--lineD);padding:26px clamp(14px,1.8vw,28px) 32px;min-width:0}
+.tenet:first-child{border-left:0;padding-left:0}
+.tenet .k{display:block;color:var(--nude);margin-bottom:16px}
+.tenet h3{font-family:var(--disp);font-weight:400;font-size:clamp(19px,1.7vw,25px);line-height:1.14;
+          letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.tenet p{color:var(--dim-l);font-size:14.5px}
+@media(max-width:980px){.tenet:nth-child(odd){border-left:0;padding-left:0}
+  .tenet:nth-child(n+3){border-top:1px solid var(--lineD)}}
+@media(max-width:560px){.tenet{border-left:0;padding-left:0}
+  .tenet:nth-child(n+2){border-top:1px solid var(--lineD)}}
+
+/* ── заживление: круглые кропы, как в её постах ────── */
+.heal{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,56px);text-align:center}
+@media(max-width:700px){.heal{grid-template-columns:1fr;gap:34px}}
+.heal figure{min-width:0}
+.heal .circ{width:min(100%,260px);aspect-ratio:1/1;border-radius:50%;object-fit:cover;margin:0 auto;
+            background:var(--smoke);border:1px solid var(--lineL)}
+.heal figcaption{margin-top:18px}
+.heal .t{display:block;color:var(--brick);margin-bottom:8px}
+.heal .d{color:var(--dim);font-size:14.5px}
+.heal-note{text-align:center;margin-top:clamp(26px,3vw,44px)}
+.heal-note .hand{font-size:clamp(20px,2.2vw,30px);color:var(--brick)}
+
+/* ── этапы ─────────────────────────────────────────── */
+.flow{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--lineL)}
+@media(max-width:900px){.flow{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.flow{grid-template-columns:1fr}}
+.fstep{border-left:1px solid var(--lineL);padding:26px clamp(14px,1.8vw,28px) 32px;min-width:0}
+.fstep:first-child{border-left:0;padding-left:0}
+.fstep .no{font-family:var(--disp);font-weight:400;font-size:clamp(30px,3.4vw,50px);line-height:1;
+           letter-spacing:.08em;color:var(--smoke-d)}
+.fstep h3{font-family:var(--disp);font-weight:400;font-size:18px;letter-spacing:.12em;
+          text-transform:uppercase;margin:14px 0 10px}
+.fstep p{color:var(--dim);font-size:14.5px}
+@media(max-width:900px){.fstep:nth-child(odd){border-left:0;padding-left:0}
+  .fstep:nth-child(n+3){border-top:1px solid var(--lineL)}}
+@media(max-width:520px){.fstep{border-left:0;padding-left:0}
+  .fstep:nth-child(n+2){border-top:1px solid var(--lineL)}}
+
+/* ── о мастере ─────────────────────────────────────── */
+.bio{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:clamp(24px,3.6vw,64px);align-items:start}
+@media(max-width:920px){.bio{grid-template-columns:1fr}}
+.bio-q{font-family:var(--disp);font-weight:400;font-size:clamp(21px,2.3vw,34px);line-height:1.24;
+       letter-spacing:.05em;margin-bottom:16px}
+.bio-from{color:var(--nude);margin-bottom:28px}
+.bio p{color:var(--dim-l);margin-bottom:14px;max-width:62ch}
+.facts{border-top:1px solid var(--lineD);margin-top:28px}
+.fact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:16px;padding:15px 0;
+      border-bottom:1px solid var(--lineD);align-items:baseline}
+.fact b{font-family:var(--disp);font-weight:400;font-size:19px;letter-spacing:.07em}
+.fact span{color:var(--dim-l);font-size:14px}
+.bio-ph img{width:100%;aspect-ratio:3/4;object-fit:cover;background:var(--ink-2)}
+.bio-ph figcaption{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--lineD);
+                   padding-top:12px;margin-top:12px}
+
+/* ── работы ────────────────────────────────────────── */
+.works{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(8px,1vw,18px)}
+.w{position:relative;min-width:0;overflow:hidden}
+.w img{width:100%;height:100%;object-fit:cover;background:var(--smoke);transition:transform .6s}
+.w:hover img{transform:scale(1.03)}
+.w figcaption{display:flex;justify-content:space-between;gap:10px;padding-top:10px;color:var(--dim)}
+.w figcaption i{font-style:normal;color:var(--brick)}
+.w1{grid-column:span 5;aspect-ratio:4/5}
+.w2{grid-column:span 4;aspect-ratio:3/4}
+.w3{grid-column:span 3;aspect-ratio:3/4}
+.w4{grid-column:span 4;aspect-ratio:1/1}
+.w5{grid-column:span 5;aspect-ratio:5/4}
+.w6{grid-column:span 3;aspect-ratio:3/4}
+.w7{grid-column:span 7;aspect-ratio:16/10}
+.w8{grid-column:span 5;aspect-ratio:16/10}
+@media(max-width:820px){
+  .works{grid-template-columns:repeat(2,1fr)}
+  .w1,.w2,.w3,.w4,.w5,.w6{grid-column:span 1;aspect-ratio:3/4}
+  .w7,.w8{grid-column:span 2;aspect-ratio:16/10}
+}
+
+/* ── обучение ──────────────────────────────────────── */
+.edu{border-top:1px solid var(--lineL)}
+.edurow{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1.1fr) auto;
+        gap:clamp(14px,2.2vw,36px);align-items:baseline;padding:26px 0;
+        border-bottom:1px solid var(--lineL);transition:padding .2s}
+.edurow:hover{padding-left:12px}
+.edurow .no{color:var(--brick)}
+.edurow h3{font-family:var(--disp);font-weight:400;font-size:clamp(19px,1.9vw,27px);
+           letter-spacing:.1em;text-transform:uppercase;line-height:1.16}
+.edurow p{color:var(--dim);font-size:14.5px}
+.edurow .v{font-family:var(--disp);font-weight:400;font-size:clamp(21px,1.9vw,30px);
+           letter-spacing:.05em;white-space:nowrap}
+.edurow:hover .v{color:var(--brick)}
+@media(max-width:860px){
+  .edurow{grid-template-columns:auto 1fr;row-gap:10px}
+  .edurow p,.edurow .v{grid-column:1/-1}
+}
+
+/* ── отзывы ────────────────────────────────────────── */
+.says{columns:2;column-gap:clamp(18px,2.6vw,44px)}
+@media(max-width:860px){.says{columns:1}}
+.say{break-inside:avoid;border-top:1px solid var(--lineL);padding:22px 0 28px}
+.say .st{color:var(--brick);letter-spacing:5px;font-size:11px}
+.say p{font-family:var(--disp);font-weight:400;font-size:clamp(17px,1.5vw,23px);line-height:1.42;
+       letter-spacing:.02em;margin:16px 0 18px}
+.say .who{display:flex;justify-content:space-between;gap:12px}
+.say .who i{font-style:normal;color:var(--dim)}
+
+/* ── контакты ──────────────────────────────────────── */
+.cont{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,3.6vw,64px);align-items:start}
+@media(max-width:920px){.cont{grid-template-columns:1fr}}
+.kv{border-top:1px solid var(--lineD)}
+.kv .row{display:grid;grid-template-columns:minmax(0,.46fr) minmax(0,1fr);gap:16px;padding:18px 0;
+         border-bottom:1px solid var(--lineD);align-items:baseline}
+.kv .k{color:var(--nude)}
+.kv .v{font-size:17px}
+.kv .v a{border-bottom:1px solid var(--lineD)}
+.kv .v a:hover{border-bottom-color:var(--paper)}
+.kv .v small{display:block;color:var(--dim-l);font-size:13.5px;margin-top:6px}
+@media(max-width:520px){.kv .row{grid-template-columns:1fr;gap:6px}}
+.book{border:1px solid var(--lineD);padding:clamp(22px,2.6vw,36px)}
+.book h3{font-family:var(--disp);font-weight:400;font-size:clamp(22px,2.2vw,32px);letter-spacing:.12em;
+         text-transform:uppercase;margin-bottom:14px}
+.book p{color:var(--dim-l);font-size:14.5px;margin-bottom:22px}
+.book .lnk{display:block;text-align:center;margin-bottom:8px}
+.book .note{margin-top:18px;color:var(--dim-l)}
+
+/* ── правовое ──────────────────────────────────────── */
+.legal{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3.4vw,60px)}
+@media(max-width:860px){.legal{grid-template-columns:1fr}}
+.legal h3{color:var(--nude);margin-bottom:16px}
+.legal p,.legal li{font-size:13.5px;color:var(--dim-l);line-height:1.68}
+.legal b{color:var(--paper);font-weight:400}
+.legal ul{margin:8px 0 0;padding-left:16px}
+.legal .warn{border:1px solid var(--nude);padding:12px 16px;margin:16px 0;color:var(--paper);font-size:13.5px}
+
+footer{background:var(--ink);color:var(--dim-l);padding-block:26px;display:flex;justify-content:space-between;
+       gap:14px;flex-wrap:wrap;align-items:center}
+footer .fm{font-family:var(--disp);font-weight:400;letter-spacing:.2em;text-transform:uppercase;
+           color:var(--paper);font-size:14px}
+
+.mbar{display:none}
+@media(max-width:880px){
+  body{padding-bottom:60px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:70;
+        background:var(--paper);border-top:1px solid var(--lineL)}
+  .mbar a{padding:18px 8px;text-align:center;font-family:var(--thin);font-weight:300;font-size:10px;
+          letter-spacing:.2em;text-transform:uppercase}
+  .mbar a:first-child{background:var(--ink);color:var(--paper)}
+}
+
+.demo{background:var(--smoke);color:var(--ink);text-align:center;padding:14px 20px;
+      font-family:var(--thin);font-weight:300;font-size:10px;letter-spacing:.16em;
+      line-height:1.8;text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<aside class="rail">
+  <span class="r-mark">NN</span>
+  <span class="r-vert">Permanent make up &middot; Красноярск</span>
+  <span class="r-num">01</span>
+</aside>
+
+<div class="top" id="top">
+  <nav class="nav">
+    <a href="#price">Прайс</a>
+    <a href="#tenets">Подход</a>
+    <a href="#heal">Заживление</a>
+    <a href="#master">Мастер</a>
+    <a href="#works">Работы</a>
+    <a href="#edu">Обучение</a>
+    <a href="#says">Отзывы</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+  <div class="r">
+    <a class="tel" href="tel:+79233687586">+7 923 368-75-86</a>
+    <a class="lnk lnk-f" href="#contact">Записаться</a>
+  </div>
+</div>
+
+<div class="page">
+
+<!-- 01 ── обложка -->
+<section class="cover pad" data-idx="01">
+  <div class="cover-grid">
+    <div class="mark">
+      <div class="wm" id="wm"><span>Новоселова</span><span>Наталья</span></div>
+      <div class="kicker">Permanent make up</div>
+      <div class="rule"></div>
+      <div class="where sp"><span>Красноярск, Капитанская 12</span><span>Ежедневно 9:00&ndash;22:00</span></div>
+      <p class="lead">Эстетический перманентный макияж бровей, губ и век в технике теневой растушёвки. Стаж более восьми лет, сертифицированный тренер.</p>
+      <div class="sign hand">с заботой о Вашей красоте</div>
+      <div class="cta">
+        <a class="lnk lnk-f" href="tel:+79233687586">Позвонить</a>
+        <a class="lnk" href="https://vk.com/nnovoselova_pmu" target="_blank" rel="noopener">Написать в ВК</a>
+        <a class="lnk" href="#price">Прайс</a>
+      </div>
+    </div>
+    <figure class="portrait">
+      <img src="master.jpg" alt="Наталья Новоселова, мастер перманентного макияжа, Красноярск">
+    </figure>
+  </div>
+  <div class="slate">
+    <div><b>5,0</b><span class="sp-s">Рейтинг 2ГИС / 30 оценок</span></div>
+    <div><b>8+</b><span class="sp-s">Лет в перманентном макияже</span></div>
+    <div><b>II</b><span class="sp-s">Место, полуфинал ЧМ</span></div>
+    <div><b>1,5&ndash;2</b><span class="sp-s">Года держится результат</span></div>
+  </div>
+</section>
+
+<div class="tick">
+  <div class="tick-t">
+    <span>Перманент бровей</span><span>Перманент губ</span><span>Межресничка</span><span>Стрелка с растушёвкой</span><span>Оформление бровей</span><span>Ламинирование inLei</span><span>Наращивание ресниц</span><span>Удаление татуажа</span><span>Обучение</span>
+    <span>Перманент бровей</span><span>Перманент губ</span><span>Межресничка</span><span>Стрелка с растушёвкой</span><span>Оформление бровей</span><span>Ламинирование inLei</span><span>Наращивание ресниц</span><span>Удаление татуажа</span><span>Обучение</span>
+  </div>
+</div>
+
+<!-- 02 ── прайс -->
+<section class="sect pad" id="price" data-idx="02">
+  <div class="head rv">
+    <span class="idx sp">02 &mdash; Прайс</span>
+    <h2>Цена известна <i>до записи</i></h2>
+    <p class="sub">Перманентный макияж делается в два этапа: основная процедура и коррекция через 30&ndash;60 дней после неё. Ниже цена первого этапа, коррекция считается отдельно.</p>
+  </div>
+
+  <div class="ptabs rv">
+    <button class="ptab on" data-t="p1">Перманентный макияж</button>
+    <button class="ptab" data-t="p2">Брови и ресницы</button>
+    <button class="ptab" data-t="p3">Наращивание ресниц</button>
+    <button class="ptab" data-t="p4">Обучение</button>
+  </div>
+
+  <div class="plist on rv" id="p1">
+    <div class="pr"><span class="n">Перманентный макияж бровей<em>первый этап, теневая растушёвка</em></span><span class="v">8 000 ₽</span></div>
+    <div class="pr"><span class="n">Перманентный макияж губ<em>первый этап, пигменты Swisscolor</em></span><span class="v">8 000 ₽</span></div>
+    <div class="pr"><span class="n">Стрелка с растушёвкой</span><span class="v">8 000 ₽</span></div>
+    <div class="pr"><span class="n">Заполнение межресничного пространства</span><span class="v">6 000 ₽</span></div>
+    <div class="pr"><span class="n">Обновление перманентного макияжа</span><span class="v">6 000 ₽</span></div>
+    <div class="pr"><span class="n">Коррекция перманентного макияжа<em>брови, губы или веки, одна зона</em></span><span class="v">4 000 ₽</span></div>
+    <div class="pr"><span class="n">Удаление и осветление некачественного татуажа<em>ремувером</em></span><span class="v">2 000 ₽</span></div>
+    <div class="pr"><span class="n">Консультация и примерка эскиза</span><span class="v">бесплатно</span></div>
+  </div>
+
+  <div class="plist rv" id="p2">
+    <div class="pr"><span class="n">Оформление бровей<em>комбинированная коррекция воском и пинцетом, окрашивание, уход</em></span><span class="v">1 200 ₽</span></div>
+    <div class="pr"><span class="n">Ламинирование ресниц<em>итальянское восстановление inLei, с окрашиванием</em></span><span class="v">2 000 ₽</span></div>
+    <div class="pr"><span class="n">Комплекс: оформление бровей и ламинирование ресниц</span><span class="v">2 800 ₽</span></div>
+    <div class="pr"><span class="n">Окрашивание ресниц</span><span class="v">500 ₽</span></div>
+    <div class="pr"><span class="n">Удаление нежелательных волос по зонам<em>усики, нос, щёки, подбородок</em></span><span class="v">200 ₽</span></div>
+  </div>
+
+  <div class="plist rv" id="p3">
+    <div class="pr"><span class="n">Классическое наращивание ресниц</span><span class="v">2 300 ₽</span></div>
+    <div class="pr"><span class="n">Наращивание ресниц, объём 1,5D</span><span class="v">2 400 ₽</span></div>
+    <div class="pr"><span class="n">Наращивание ресниц, объём 2D</span><span class="v">2 600 ₽</span></div>
+    <div class="pr"><span class="n">Снятие наращённых ресниц<em>от другого мастера или без последующего наращивания</em></span><span class="v">300 ₽</span></div>
+  </div>
+
+  <div class="plist rv" id="p4">
+    <div class="pr"><span class="n">Мастер бровист с нуля до профи<em>очное обучение</em></span><span class="v">15 000 ₽</span></div>
+    <div class="pr"><span class="n">Базовый курс: мастер перманентного макияжа<em>очное обучение с нуля</em></span><span class="v">от 45 000 ₽</span></div>
+    <div class="pr"><span class="n">Мастер-классы для действующих мастеров<em>программа под запрос</em></span><span class="v">по запросу</span></div>
+  </div>
+
+  <button class="pmore" type="button">Показать весь прайс</button>
+
+  <p class="fine">Прайс из карточки 2ГИС, обновлён 15 мая 2026 года, и из сообщества ВКонтакте. Цены не являются публичной офертой (ст. 437 ГК РФ): окончательная стоимость зависит от исходных данных и объёма работы и называется мастером до начала процедуры.</p>
+</section>
+
+<!-- 03 ── подход -->
+<section class="sect dark pad" id="tenets" data-idx="03">
+  <div class="head rv">
+    <span class="idx sp">03 &mdash; Подход</span>
+    <h2>Дополнение, <i>а не перекраивание</i></h2>
+    <p class="sub">«Ни в коем случае не грязь, не тот неудачный татуаж из 2010, ставший стереотипом данной процедуры». Слова Натальи из её сообщества.</p>
+  </div>
+  <div class="tenets rv">
+    <div class="tenet">
+      <span class="k sp">01 &mdash; Техника</span>
+      <h3>Теневая растушёвка</h3>
+      <p>Сохраняется текстура кожи, форма собирается без чёткой приконтурной границы и без плотности татуажа.</p>
+    </div>
+    <div class="tenet">
+      <span class="k sp">02 &mdash; Опыт</span>
+      <h3>Восемь лет и чемпионат</h3>
+      <p>Сертифицированный тренер и мастер. В мае 2026 года второе место в полуфинале чемпионата мира по перманентному макияжу.</p>
+    </div>
+    <div class="tenet">
+      <span class="k sp">03 &mdash; Материалы</span>
+      <h3>Пигменты Swisscolor</h3>
+      <p>Премиальная линейка с ухаживающими компонентами. В зажившем виде оттенки выглядят натурально, без «плоского пластилина».</p>
+    </div>
+    <div class="tenet">
+      <span class="k sp">04 &mdash; Гарантия</span>
+      <h3>Не придётся удалять</h3>
+      <p>Формулировка самой Натальи. Если есть сомнения, сначала бесплатная консультация с примеркой эскиза, и только потом процедура.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 04 ── заживление -->
+<section class="sect tone pad" id="heal" data-idx="04">
+  <div class="head rv">
+    <span class="idx sp">04 &mdash; Без ретуши</span>
+    <h2>До, сразу после <i>и через семь дней</i></h2>
+    <p class="sub">Наталья показывает результат на всех трёх стадиях и без обработки. Судить о работе можно только по зажившему виду, свежий перманент всегда выглядит ярче настоящего.</p>
+  </div>
+  <div class="heal rv">
+    <figure>
+      <img class="circ" src="g-do.jpg" alt="Губы до перманентного макияжа" loading="lazy">
+      <figcaption><span class="t sp">До</span><span class="d">Исходный контур и неоднородный тон</span></figcaption>
+    </figure>
+    <figure>
+      <img class="circ" src="g-srazu.jpg" alt="Губы сразу после процедуры перманентного макияжа" loading="lazy">
+      <figcaption><span class="t sp">Сразу после</span><span class="d">Цвет насыщеннее, чем будет в итоге</span></figcaption>
+    </figure>
+    <figure>
+      <img class="circ" src="g-zazhil.jpg" alt="Зажившие губы через семь дней после перманентного макияжа" loading="lazy">
+      <figcaption><span class="t sp">Зажившее, спустя 7 дней</span><span class="d">Тот оттенок, с которым вы будете жить</span></figcaption>
+    </figure>
+  </div>
+  <p class="heal-note"><span class="hand">всё то, что Вы любите, и что откликается мне</span></p>
+</section>
+
+<!-- 05 ── этапы -->
+<section class="sect pad" id="flow" data-idx="05">
+  <div class="head rv">
+    <span class="idx sp">05 &mdash; Порядок</span>
+    <h2>От эскиза <i>до коррекции</i></h2>
+    <p class="sub">Между двумя этапами кожа заживает и цвет раскрывается. Только на зажившем результате видно, что дорабатывать.</p>
+  </div>
+  <div class="flow rv">
+    <div class="fstep"><span class="no">01</span><h3>Консультация</h3><p>Бесплатно. Разбираем форму, цвет и ваши сомнения, примеряем эскиз. Можно прийти до записи на саму процедуру.</p></div>
+    <div class="fstep"><span class="no">02</span><h3>Эскиз и цвет</h3><p>Форма рисуется под черты лица, оттенок подбирается из палитры Swisscolor и утверждается вами до начала работы.</p></div>
+    <div class="fstep"><span class="no">03</span><h3>Процедура</h3><p>Теневая растушёвка. Плотность набирается мягко, естественный вид без жёсткого контура, если вы хотите именно его.</p></div>
+    <div class="fstep"><span class="no">04</span><h3>Коррекция</h3><p>Через 30&ndash;60 дней после первой процедуры. На зажившем результате выравнивается тон и дорабатывается форма.</p></div>
+  </div>
+</section>
+
+<!-- 06 ── о мастере -->
+<section class="sect dark pad" id="master" data-idx="06">
+  <div class="head rv">
+    <span class="idx sp">06 &mdash; Мастер</span>
+    <h2>Наталья <i>Новоселова</i></h2>
+    <p class="sub">Основатель студии PERMANENT lash brow, сертифицированный тренер и мастер перманентного макияжа.</p>
+  </div>
+  <div class="bio">
+    <div class="rv">
+      <div class="bio-q">«Перманентный макияж как украшение лица. Штрих, гармонизирующий краски в образе»</div>
+      <div class="bio-from sp">Наталья Новоселова, из сообщества ВКонтакте</div>
+      <p>Работа идёт в технике теневой растушёвки: сохраняется текстура кожи, форма собирается без плотности татуажа. В губах Наталья выравнивает общий тон и придаёт оттенок, а не перекраивает контур.</p>
+      <p>В мае 2026 года впервые вышла на чемпионат и сразу заняла второе место в полуфинале чемпионата мира по перманентному макияжу, который проходил в Красноярске.</p>
+      <p>Кроме перманентного макияжа в студии есть построение архитектуры и окрашивание бровей, ламинирование ресниц и удаление татуажа. Наталья также обучает: очный курс для тех, кто идёт в профессию с нуля, и мастер-классы для действующих мастеров.</p>
+      <div class="facts">
+        <div class="fact"><b>Капитанская, 12</b><span>офис 2-25, второй этаж, ЖК Южный берег</span></div>
+        <div class="fact"><b>9:00&ndash;22:00</b><span>ежедневно, по предварительной записи</span></div>
+        <div class="fact"><b>5,0 из 5</b><span>30 оценок и 27 отзывов в 2ГИС</span></div>
+        <div class="fact"><b>с 2015 года</b><span>сообщество ВКонтакте</span></div>
+      </div>
+    </div>
+    <figure class="bio-ph rv">
+      <img src="master2.jpg" alt="Наталья Новоселова в студии перманентного макияжа" loading="lazy">
+      <figcaption class="sp-s"><span>Наталья Новоселова</span><span>Красноярск</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 07 ── работы -->
+<section class="sect pad" id="works" data-idx="07">
+  <div class="head rv">
+    <span class="idx sp">07 &mdash; Работы</span>
+    <h2>Зажившие результаты, <i>как есть</i></h2>
+    <p class="sub">«Всё больше просто фото. Как есть, для понимания моего подхода в работе». Снимки из открытого сообщества ВКонтакте.</p>
+  </div>
+  <div class="works rv">
+    <figure class="w w1"><img src="g-1.jpg" alt="Зажившие брови после перманентного макияжа" loading="lazy"><figcaption class="sp-s"><span>Брови, зажившая работа</span><i>01</i></figcaption></figure>
+    <figure class="w w2"><img src="g-2.jpg" alt="Перманентный макияж губ, зажившая работа" loading="lazy"><figcaption class="sp-s"><span>Губы, зажившая работа</span><i>02</i></figcaption></figure>
+    <figure class="w w3"><img src="g-3.jpg" alt="Заполнение межресничного пространства" loading="lazy"><figcaption class="sp-s"><span>Межресничка</span><i>03</i></figcaption></figure>
+    <figure class="w w4"><img src="g-4.jpg" alt="Оформление и окрашивание бровей" loading="lazy"><figcaption class="sp-s"><span>Оформление бровей</span><i>04</i></figcaption></figure>
+    <figure class="w w5"><img src="g-5.jpg" alt="Ламинирование ресниц inLei" loading="lazy"><figcaption class="sp-s"><span>Ламинирование ресниц</span><i>05</i></figcaption></figure>
+    <figure class="w w6"><img src="g-6.jpg" alt="Перманентный макияж в теневой растушёвке" loading="lazy"><figcaption class="sp-s"><span>Теневая растушёвка</span><i>06</i></figcaption></figure>
+    <figure class="w w7"><img src="g-7.jpg" alt="Работа мастера перманентного макияжа" loading="lazy"><figcaption class="sp-s"><span>До и после</span><i>07</i></figcaption></figure>
+    <figure class="w w8"><img src="g-8.jpg" alt="Студия перманентного макияжа в Красноярске" loading="lazy"><figcaption class="sp-s"><span>В студии</span><i>08</i></figcaption></figure>
+  </div>
+  <p class="fine">Снимки опубликованы мастером в открытом сообществе. Перед публикацией на рабочем сайте согласуйте их с клиентками.</p>
+</section>
+
+<!-- 08 ── обучение -->
+<section class="sect tone pad" id="edu" data-idx="08">
+  <div class="head rv">
+    <span class="idx sp">08 &mdash; Обучение</span>
+    <h2>Очно, <i>у практикующего мастера</i></h2>
+    <p class="sub">«Очное обучение для тех, кто хочет освоить профессию с нуля. Мастер-классы для действующих мастеров с опытом работы».</p>
+  </div>
+  <div class="edu rv">
+    <div class="edurow">
+      <span class="no sp">01</span>
+      <h3>Мастер бровист с нуля</h3>
+      <p>Архитектура, коррекция, окрашивание, работа с клиентом. Для тех, кто заходит в профессию.</p>
+      <span class="v">15 000 ₽</span>
+    </div>
+    <div class="edurow">
+      <span class="no sp">02</span>
+      <h3>Базовый курс мастера ПМ</h3>
+      <p>Полный вход в перманентный макияж: техника, пигменты, отработка на моделях.</p>
+      <span class="v">от 45 000 ₽</span>
+    </div>
+    <div class="edurow">
+      <span class="no sp">03</span>
+      <h3>Мастер-классы</h3>
+      <p>Для действующих мастеров с опытом. Программа собирается под запрос.</p>
+      <span class="v">по запросу</span>
+    </div>
+  </div>
+</section>
+
+<!-- 09 ── отзывы -->
+<section class="sect pad" id="says" data-idx="09">
+  <div class="head rv">
+    <span class="idx sp">09 &mdash; Отзывы</span>
+    <h2>Что пишут <i>клиентки</i></h2>
+    <p class="sub">Карточка в 2ГИС: 30 оценок, 27 отзывов, средний балл 5,0, отрицательных нет.</p>
+  </div>
+  <div class="says rv">
+    <div class="say"><div class="st">&#9679;&#9679;&#9679;&#9679;&#9679;</div>
+      <p>Чудесное место, чудесный мастер, очень понравилась работа и результат! Рекомендую однозначно.</p>
+      <div class="who sp-s"><span>Елена Я.</span><i>2ГИС / май 2026</i></div></div>
+    <div class="say"><div class="st">&#9679;&#9679;&#9679;&#9679;&#9679;</div>
+      <p>Два года я шла к этому решению. Это тот редкий случай, когда мастер видит личность, а не просто клиента. Теперь я просыпаюсь и сразу вижу в зеркале красивые, аккуратные и мои брови.</p>
+      <div class="who sp-s"><span>Алена Герцен</span><i>2ГИС / август 2026</i></div></div>
+    <div class="say"><div class="st">&#9679;&#9679;&#9679;&#9679;&#9679;</div>
+      <p>Мастер своего дела создала идеальный образ, учитывая мои пожелания и особенности внешности. Результат превзошёл ожидания, макияж выглядит естественно.</p>
+      <div class="who sp-s"><span>Анастасия Белошапкина</span><i>2ГИС / октябрь 2025</i></div></div>
+    <div class="say"><div class="st">&#9679;&#9679;&#9679;&#9679;&#9679;</div>
+      <p>Очень понравилось всё, от студии до качественной работы. Не ожидала такого красивого результата, процедура не сильно болезненная.</p>
+      <div class="who sp-s"><span>Ксения Вахтерова</span><i>2ГИС / апрель 2024</i></div></div>
+    <div class="say"><div class="st">&#9679;&#9679;&#9679;&#9679;&#9679;</div>
+      <p>Супер комфортная студия, очень общительные и весёлые девушки.</p>
+      <div class="who sp-s"><span>Софья Сморогова</span><i>2ГИС / апрель 2024</i></div></div>
+    <div class="say"><div class="st">&#9679;&#9679;&#9679;&#9679;&#9679;</div>
+      <p>Было очень комфортно, результатом довольна.</p>
+      <div class="who sp-s"><span>Гостья студии</span><i>2ГИС / май 2026</i></div></div>
+  </div>
+</section>
+
+<!-- 10 ── контакты -->
+<section class="sect dark pad" id="contact" data-idx="10">
+  <div class="head rv">
+    <span class="idx sp">10 &mdash; Контакты</span>
+    <h2>Как <i>записаться</i></h2>
+  </div>
+  <div class="cont">
+    <div class="kv rv">
+      <div class="row"><span class="k sp">Адрес</span><span class="v">Красноярск, Капитанская улица, 12
+        <small>Офис 2-25, второй этаж. Микрорайон Южный берег, Свердловский район, 660064. Приём по предварительной записи.</small></span></div>
+      <div class="row"><span class="k sp">Режим</span><span class="v">Ежедневно с 9:00 до 22:00</span></div>
+      <div class="row"><span class="k sp">Телефон</span><span class="v"><a href="tel:+79233687586">+7 923 368-75-86</a>
+        <small>Наталья, мастер перманентного макияжа. По наращиванию ресниц <a href="tel:+79233511424">+7 923 351-14-24</a></small></span></div>
+      <div class="row"><span class="k sp">Мессенджеры</span><span class="v"><a href="https://wa.me/79233687586" target="_blank" rel="noopener">WhatsApp</a> &nbsp;/&nbsp; <a href="https://t.me/nnovoselova_pmu" target="_blank" rel="noopener">Telegram</a></span></div>
+      <div class="row"><span class="k sp">Соцсети</span><span class="v"><a href="https://vk.com/nnovoselova_pmu" target="_blank" rel="noopener">ВКонтакте</a> &nbsp;/&nbsp; <a href="https://ok.ru/profile/570179137010" target="_blank" rel="noopener">Одноклассники</a>
+        <small>Работы, прайс и актуальное «Примерка эскиза» в сообществе</small></span></div>
+    </div>
+    <div class="book rv">
+      <h3>Записаться</h3>
+      <p>Напишите или позвоните. Если сомневаетесь в форме или цвете, приходите сначала на бесплатную консультацию с примеркой эскиза.</p>
+      <a class="lnk lnk-f" href="tel:+79233687586">Позвонить +7 923 368-75-86</a>
+      <a class="lnk" href="https://vk.com/nnovoselova_pmu" target="_blank" rel="noopener">Написать во ВКонтакте</a>
+      <a class="lnk lnk-g" href="https://wa.me/79233687586" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      <a class="lnk lnk-g" href="https://dikidi.ru/424669" target="_blank" rel="noopener">Онлайн-запись</a>
+      <a class="lnk lnk-g" href="https://2gis.ru/krasnoyarsk/firm/70000001045668250" target="_blank" rel="noopener">Открыть в 2ГИС</a>
+      <p class="note sp-s">Форм на сайте нет: запись идёт напрямую к мастеру</p>
+    </div>
+  </div>
+</section>
+
+<!-- 11 ── правовое -->
+<section class="sect dark pad" id="legal" data-idx="11" style="border-top:1px solid var(--lineD)">
+  <div class="legal rv">
+    <div>
+      <h3 class="sp">Исполнитель услуг</h3>
+      <p>
+        Наименование: <b>[указать: самозанятая / ИП, полное наименование]</b><br>
+        ФИО: Новоселова Наталья <b>[отчество уточнить]</b><br>
+        ИНН: <b>[указать]</b> &middot; ОГРНИП: <b>[указать, если ИП]</b><br>
+        Адрес оказания услуг: 660064, Красноярский край, г. Красноярск, Капитанская улица, 12, офис 2-25<br>
+        Телефон: <a href="tel:+79233687586">+7 923 368-75-86</a><br>
+        Режим работы: ежедневно с 9:00 до 22:00, по предварительной записи
+      </p>
+      <p style="margin-top:14px">Цены на сайте не являются публичной офертой (ст. 437 ГК РФ). Итоговая стоимость зависит от исходных данных и объёма работы и определяется мастером до начала процедуры. Сайт не собирает персональные данные: форм заявок нет, запись ведётся по телефону и в сообщениях.</p>
+    </div>
+    <div>
+      <h3 class="sp">Важно перед процедурой</h3>
+      <div class="warn">Услуги не являются медицинскими. Имеются ограничения, уточняйте у мастера.</div>
+      <p>Процедуру переносят или подбирают иначе, если есть:</p>
+      <ul>
+        <li>повреждения, воспаления или высыпания в зоне работы;</li>
+        <li>индивидуальная непереносимость компонентов пигмента или анестетика;</li>
+        <li>склонность к образованию келоидных рубцов;</li>
+        <li>беременность и грудное вскармливание: решение принимается вместе с мастером;</li>
+        <li>недавние инъекционные или аппаратные процедуры в зоне работы.</li>
+      </ul>
+      <p style="margin-top:14px">Полный список ограничений мастер уточняет на консультации до записи. Сайт носит информационный характер.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="pad">
+  <span class="fm">Новоселова Наталья</span>
+  <span class="sp-s">Красноярск, Капитанская 12 &middot; 9:00&ndash;22:00 &middot; +7 923 368-75-86</span>
+</footer>
+
+</div>
+
+<div class="mbar">
+  <a href="tel:+79233687586">Позвонить</a>
+  <a href="https://vk.com/nnovoselova_pmu">Написать в ВК</a>
+</div>
+
+<div class="demo">Демонстрационный пример сайта &middot; данные из открытой карточки 2ГИС и сообщества ВКонтакте &middot; реквизиты подставляются после согласования</div>
+
+<script>
+(function(){
+  var top=document.getElementById('top');
+  function onScroll(){top.classList.toggle('solid',window.scrollY>40)}
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+
+  var tabs=document.querySelectorAll('.ptab'), more=document.querySelector('.pmore');
+  function syncMore(){
+    if(!more) return;
+    var cur=document.querySelector('.plist.on');
+    var n=cur?cur.querySelectorAll('.pr').length:0;
+    cur&&cur.classList.remove('exp');
+    more.textContent='Показать весь прайс, ещё '+Math.max(n-5,0);
+    more.style.display=(window.innerWidth<=700&&n>5)?'block':'none';
+  }
+  tabs.forEach(function(t){
+    t.addEventListener('click',function(){
+      tabs.forEach(function(x){x.classList.remove('on')});
+      t.classList.add('on');
+      document.querySelectorAll('.plist').forEach(function(p){p.classList.remove('on','exp')});
+      document.getElementById(t.dataset.t).classList.add('on');
+      syncMore();
+    });
+  });
+  if(more){more.addEventListener('click',function(){
+    var cur=document.querySelector('.plist.on');
+    if(cur){cur.classList.add('exp')}
+    more.style.display='none';
+  })}
+  syncMore();window.addEventListener('resize',syncMore);
+
+  /* строки логотипа подгоняются под ширину колонки, как в её обложке */
+  var wm=document.getElementById('wm');
+  function fitWm(){
+    if(!wm) return;
+    var box=wm.parentNode.clientWidth;
+    if(!box) return;
+    var m=document.getElementById('wm-measure');
+    if(!m){
+      m=document.createElement('div'); m.id='wm-measure';
+      m.style.cssText='position:absolute;left:-9999px;top:0;white-space:nowrap;visibility:hidden;pointer-events:none';
+      document.body.appendChild(m);
+    }
+    var cs=getComputedStyle(wm);
+    m.style.fontFamily=cs.fontFamily; m.style.fontWeight=cs.fontWeight;
+    m.style.letterSpacing=cs.letterSpacing; m.style.textTransform=cs.textTransform;
+    m.style.fontSize='100px';
+    [].forEach.call(wm.children,function(s){
+      m.textContent=s.textContent;
+      var w=m.offsetWidth;
+      if(!w) return;
+      s.style.fontSize=Math.min(100*box/w*0.97, window.innerHeight*0.14, 104).toFixed(2)+'px';
+    });
+  }
+  fitWm();
+  if(document.fonts&&document.fonts.ready){document.fonts.ready.then(fitWm)}
+  window.addEventListener('load',fitWm);
+  var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(fitWm,120)});
+
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+  },{rootMargin:'0px 0px -50px 0px'});
+  document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+
+  var num=document.querySelector('.r-num');
+  var io2=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting&&num){num.textContent=e.target.dataset.idx}});
+  },{rootMargin:'-45% 0px -50% 0px'});
+  document.querySelectorAll('[data-idx]').forEach(function(m){io2.observe(m)});
+})();
+</script>
+
+</body>
+</html>
