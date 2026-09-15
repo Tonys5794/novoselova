@@ -124,9 +124,11 @@ a{color:inherit;text-decoration:none}
 .mark .rule{height:1px;background:rgba(17,17,17,.3);margin:clamp(20px,2.4vw,34px) 0}
 .mark .where{display:flex;gap:clamp(14px,2vw,34px);flex-wrap:wrap;color:#3A3734;margin-bottom:18px}
 .mark .lead{max-width:40ch;color:#332F2C;font-size:clamp(15px,.5vw + 13px,17px)}
-.mark .sign{display:inline-block;transform:rotate(-7deg);transform-origin:left center;
-            font-family:var(--hand);font-size:clamp(20px,2vw,30px);color:var(--brick);
-            margin-top:clamp(18px,2vw,28px)}
+.mark .sign-b{display:flex;align-items:center;gap:16px;justify-content:flex-end;
+              max-width:40ch;margin-top:clamp(18px,2vw,26px)}
+.mark .sign-b i{flex:1;height:1px;background:rgba(17,17,17,.28)}
+.mark .sign-b .hand{font-size:clamp(19px,1.7vw,26px);color:var(--brick);white-space:nowrap}
+@media(max-width:420px){.mark .sign-b .hand{white-space:normal;text-align:right}}
 .mark .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:clamp(22px,2.6vw,36px)}
 .mark .cta .lnk{border-color:var(--ink)}
 .portrait{position:relative;align-self:center;justify-self:end;display:flex;justify-content:flex-end;
@@ -392,7 +394,7 @@ footer .fm{font-family:var(--disp);font-weight:400;letter-spacing:.2em;text-tran
       <div class="rule"></div>
       <div class="where sp"><span>Красноярск, Капитанская 12</span><span>Ежедневно 9:00&ndash;22:00</span></div>
       <p class="lead">Эстетический перманентный макияж бровей, губ и век в технике теневой растушёвки. Стаж более восьми лет, сертифицированный тренер.</p>
-      <div class="sign hand">с заботой о Вашей красоте</div>
+      <div class="sign-b"><i></i><span class="hand">с заботой о Вашей красоте</span></div>
       <div class="cta">
         <a class="lnk lnk-f" href="tel:+79233687586">Позвонить</a>
         <a class="lnk" href="https://vk.com/nnovoselova_pmu" target="_blank" rel="noopener">Написать в ВК</a>
